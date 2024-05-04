@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class StarwarsapiService {
 
-  private apiUrl = 'https://swapi.dev/api/people/?page=1'
+  private apiUrl = 'https://swapi.dev/api/people/?page='
 
   constructor(private httpClient: HttpClient) { }
 
-  getCharacters(){
-    return this.httpClient.get(this.apiUrl);
+  getCharacters(page:number){
+    return this.httpClient.get(`${this.apiUrl}${page}`);
   }
   
 }
