@@ -1,0 +1,12 @@
+.space-character-item{
+  margin:0 .78125% 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.space-character-item:hover{ 
+  box-shadow: 0 0 20px rgb(0, 17, 255);
+}
+
+
+

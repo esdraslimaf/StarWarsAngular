@@ -1,8 +1,9 @@
-<ul>
-    <li *ngFor="let character of characters">{{ character.name }} gender: {{character.gender}}</li>
-  </ul>
-  <p *ngIf="!characters || characters.length === 0">Carregando personagens...</p>
+<div class="listofcharacter">
+<app-infos-character-list *ngFor="let character of characters" [character]="character"></app-infos-character-list>
+</div>
 
+  <p *ngIf="!characters || characters.length === 0">Carregando personagens...</p>
+  
   <div class="Bloco-Paginacao">
   <h4>Página {{paginalatual}} de 9</h4>
   <button (click)="TrocarPagina()">{{ paginalatual === 9 ? 'Reiniciar' : 'Próxima página' }}</button>

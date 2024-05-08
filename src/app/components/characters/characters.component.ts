@@ -12,6 +12,7 @@ export class CharactersComponent implements OnInit {
    pagina = 1;
    paginalatual!:number;
 
+
   constructor(private starwarsapi: StarwarsapiService) {}
   ngOnInit(): void {
     this.paginalatual = 1;
