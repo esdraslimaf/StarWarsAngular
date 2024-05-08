@@ -1,3 +1,60 @@
-.nameCharacter{
+.character-container {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .character-info {
+    margin-bottom: 10px;
+  }
+  
+  .character-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e4fd00;
+  }
+
+  .character-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: blue;
+  }
+  
+  .planet-info {
+    margin-top: 20px;
+  }
+  
+  .planet-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000; 
+  }
+
+  .planet-details p{
+    margin: 5px;
+    font-size: 16px;
     color:white;
-}
+  }
+
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  
+  
+
+  

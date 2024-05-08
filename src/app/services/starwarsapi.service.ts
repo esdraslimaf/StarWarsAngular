@@ -8,6 +8,7 @@ export class StarwarsapiService {
 
   private apiUrl = 'https://swapi.dev/api/people/?page='
   private apiUrlUnique = 'https://swapi.dev/api/people/'
+  private apiUrlHomeWorld = 'https://swapi.dev/api/planets/'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -15,12 +16,12 @@ export class StarwarsapiService {
     return this.httpClient.get(`${this.apiUrl}${page}`);
   }
   
-  getCharactersForId(id:number){
+  getCharacterForId(id:number){
     return this.httpClient.get(`${this.apiUrlUnique}${id}`);
   }
 
-  getCharactersForIdd(id:number){
-    return this.httpClient.get(`https://swapi.dev/api/people/${id}`);
+  getHomeWorld(urlHomeWorld: string){
+    return this.httpClient.get(`${urlHomeWorld}`);
   }
 
 }

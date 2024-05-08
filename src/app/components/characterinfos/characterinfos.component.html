@@ -1,4 +1,39 @@
-<div *ngIf="infoOfCharacter">
-    <h1 class="nameCharacter">{{ infoOfCharacter.name }}</h1>
-    <!-- Outras propriedades do personagem -->
-  </div>
+<div *ngIf="infoOfCharacter && homeWorld" class="character-container">
+  <div class="character-info">
+
+    <div class="character-name">{{ infoOfCharacter.name }}</div>
+
+    <div class="character-details">
+      <p>Altura: {{ (infoOfCharacter.height)/100 }} metros</p>
+      <p>Peso: {{ infoOfCharacter.mass }} KG's</p>
+      <p>Cor do cabelo: {{ infoOfCharacter.hair_color }}</p>
+      <p>Cor da pele: {{ infoOfCharacter.skin_color }}</p>
+      <p>Cor dos olhos: {{ infoOfCharacter.eye_color }}</p>
+      <p>Ano de nascimento: {{ infoOfCharacter.birth_year }}</p>
+      <p>Gênero: {{ infoOfCharacter.gender }}</p>
+    </div>
+
+
+    <div class="planet-info">
+      <div class="planet-name">Planeta Natal: {{ homeWorld.name }}</div>
+      <div class="planet-details">
+        <p>Diâmetro: {{ homeWorld.diameter }}</p>
+        <p>Clima: {{ homeWorld.climate }}</p>
+        <p>Gravidade: {{ homeWorld.gravity }}</p>
+        <p>Período orbital: {{ homeWorld.orbital_period }}</p>
+        <p>Período de rotação: {{ homeWorld.rotation_period }}</p>
+        <p>População: {{ homeWorld.population }}</p>
+        <p>Água na superfície: {{ homeWorld.surface_water }}</p>
+        <p>Terreno: {{ homeWorld.terrain }}</p>
+      </div>
+    </div>
+
+      
+     
+  <div>
+
+  <button (click)="goBack()" class="back-button">Voltar</button>
+
+</div>
+
+

@@ -2,9 +2,9 @@
 <app-infos-character-list *ngFor="let character of characters" [character]="character"></app-infos-character-list>
 </div>
 
-  <p *ngIf="!characters || characters.length === 0">Carregando personagens...</p>
+  <h1 *ngIf="!characters || characters.length === 0">Carregando personagens...</h1>
   
-  <div class="Bloco-Paginacao">
-  <h4>Página {{paginalatual}} de 9</h4>
-  <button (click)="TrocarPagina()">{{ paginalatual === 9 ? 'Reiniciar' : 'Próxima página' }}</button>
-</div>
+  <div class="Bloco-Paginacao" *ngIf="characters && characters.length > 0">
+    <h4>Página {{ paginalatual }} de 9</h4>
+    <button class="custom-button" (click)="TrocarPagina()">{{ paginalatual === 9 ? 'Voltar ao início!' : 'Próxima página' }}</button>
+  </div>
