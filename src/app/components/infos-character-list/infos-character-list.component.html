@@ -1,6 +1,8 @@
-<div class="space-character-item" [routerLink]="['/characterinfo',characterId]">
-   
+<a class="space-character-item" [routerLink]="['/characterinfo', characterId]">
+    <div class="card-content">
       <h3>{{ character.name }}</h3>
       <p><strong>Gênero:</strong> {{ character.gender }}</p>
-      <h2>{{ characterId}}</h2>
-  <div>
+      <h2 class="character-id">Número do personagem: {{ characterId }}</h2>
+    </div>
+  </a>
+  

@@ -1,12 +1,30 @@
-.space-character-item{
-  margin:0 .78125% 50px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
+.space-character-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 300px; /* Defina a largura desejada */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .card-content {
+    padding: 20px;
+
+    h3 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0;
+      color:white;
+    }
+
+    .character-id {
+      margin: 10px 0 0;
+      font-size: 14px; 
+      color: white; 
+    }
+  }
 }
-
-.space-character-item:hover{ 
-  box-shadow: 0 0 20px rgb(0, 17, 255);
-}
-
-
-
