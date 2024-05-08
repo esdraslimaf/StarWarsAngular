@@ -1,0 +1,11 @@
+<div class="listofplanet">
+    <app-cardplanets *ngFor="let planet of worldList" [planet]="planet"></app-cardplanets>
+</div>
+  
+  <h1 *ngIf="!worldList || worldList.length === 0">Carregando planetas...</h1>
+  
+  <div class="Bloco-Paginacao" *ngIf="worldList && worldList.length > 0">
+    <h4>Página {{ paginaatual }} de 6</h4>
+    <button class="custom-button" (click)="TrocarPagina()">{{ paginaatual === 6 ? 'Voltar ao início!' : 'Próxima página' }}</button>
+  </div>
+  

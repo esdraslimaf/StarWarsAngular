@@ -8,7 +8,7 @@ export class StarwarsapiService {
 
   private apiUrl = 'https://swapi.dev/api/people/?page='
   private apiUrlUnique = 'https://swapi.dev/api/people/'
-  private apiUrlHomeWorld = 'https://swapi.dev/api/planets/'
+  private apiUrlWorldsPages = 'https://swapi.dev/api/planets/?page='
 
   constructor(private httpClient: HttpClient) { }
 
@@ -23,5 +23,10 @@ export class StarwarsapiService {
   getHomeWorld(urlHomeWorld: string){
     return this.httpClient.get(`${urlHomeWorld}`);
   }
+
+  getWorlds(page:number){
+    return this.httpClient.get(`${this.apiUrlWorldsPages}${page}`);
+  }
+
 
 }

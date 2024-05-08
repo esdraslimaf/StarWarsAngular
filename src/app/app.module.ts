@@ -9,6 +9,8 @@ import { InfosCharacterListComponent } from './components/infos-character-list/i
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CharacterinfosComponent } from './pages/characterinfos/characterinfos.component';
+import { PlanetsComponent } from './pages/planets/planets.component';
+import { CardplanetsComponent } from './components/cardplanets/cardplanets.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CharacterinfosComponent } from './pages/characterinfos/characterinfos.c
     InfosCharacterListComponent,
     HomeComponent,
     NavbarComponent,
-    CharacterinfosComponent
+    CharacterinfosComponent,
+    PlanetsComponent,
+    CardplanetsComponent
   ],
   imports: [
     BrowserModule,
